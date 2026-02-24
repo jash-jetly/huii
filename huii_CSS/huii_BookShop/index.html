@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Nest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <div class="logo-icon">📚</div>
+            <h1>Book Nest</h1>
+        </div>
+        <nav class="headnav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#fiction">Fiction</a></li>
+                <li><a href="#nonfiction">Non-Fiction</a></li>
+                <li><a href="#selfhelp">Self Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <p class="hero-eyebrow">Your cozy reading corner</p>
+                <h2>Welcome to<br><em>Book Nest</em></h2>
+                <p class="hero-sub">Discover stories that stay with you long after the last page.</p>
+                <a href="#fiction" class="explore-button">Explore Books</a>
+            </div>
+            <div class="hero-decoration">
+                <div class="book-stack">
+                    <div class="book b1"></div>
+                    <div class="book b2"></div>
+                    <div class="book b3"></div>
+                    <div class="book b4"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FICTION -->
+        <section class="genre-section" id="fiction">
+            <div class="section-header">
+                <p class="label">Genre</p>
+                <h2>Fiction</h2>
+                <p class="section-desc">Epic worlds, unforgettable characters, and stories that transport you.</p>
+            </div>
+            <div class="books-grid">
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9780553573404-M.jpg" alt="A Game of Thrones">
+                        <div class="badge">Bestseller</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>A Game of Thrones</h3>
+                        <p class="author">George R.R. Martin</p>
+                        <div class="book-footer">
+                            <span class="price">$14.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9780261102354-M.jpg" alt="The Lord of the Rings">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Lord of the Rings</h3>
+                        <p class="author">J.R.R. Tolkien</p>
+                        <div class="book-footer">
+                            <span class="price">$19.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg" alt="The Great Gatsby">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Great Gatsby</h3>
+                        <p class="author">F. Scott Fitzgerald</p>
+                        <div class="book-footer">
+                            <span class="price">$9.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9780385490818-M.jpg" alt="Dune">
+                        <div class="badge">Popular</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Dune</h3>
+                        <p class="author">Frank Herbert</p>
+                        <div class="book-footer">
+                            <span class="price">$12.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- NON-FICTION -->
+        <section class="genre-section alt-bg" id="nonfiction">
+            <div class="section-header">
+                <p class="label">Genre</p>
+                <h2>Non-Fiction</h2>
+                <p class="section-desc">True stories and real insights that change the way you see the world.</p>
+            </div>
+            <div class="books-grid">
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg" alt="Sapiens">
+                        <div class="badge">Must Read</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Sapiens</h3>
+                        <p class="author">Yuval Noah Harari</p>
+                        <div class="book-footer">
+                            <span class="price">$16.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9781501156700-M.jpg" alt="Educated">
+                    </div>
+                    <div class="book-info">
+                        <h3>Educated</h3>
+                        <p class="author">Tara Westover</p>
+                        <div class="book-footer">
+                            <span class="price">$13.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9780307474728-M.jpg" alt="The Power of Habit">
+                    </div>
+                    <div class="book-info">
+                        <h3>The Power of Habit</h3>
+                        <p class="author">Charles Duhigg</p>
+                        <div class="book-footer">
+                            <span class="price">$14.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9781524763138-M.jpg" alt="Becoming">
+                        <div class="badge">Award Winner</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Becoming</h3>
+                        <p class="author">Michelle Obama</p>
+                        <div class="book-footer">
+                            <span class="price">$17.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SELF HELP -->
+        <section class="genre-section" id="selfhelp">
+            <div class="section-header">
+                <p class="label">Genre</p>
+                <h2>Self Help</h2>
+                <p class="section-desc">Books that help you grow, reflect, and become your best self.</p>
+            </div>
+            <div class="books-grid">
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9780062457714-M.jpg" alt="The Subtle Art of Not Giving a Fck">
+                        <div class="badge">Top Pick</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>The Subtle Art of Not Giving a F*ck</h3>
+                        <p class="author">Mark Manson</p>
+                        <div class="book-footer">
+                            <span class="price">$13.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9780743269513-M.jpg" alt="How to Win Friends">
+                    </div>
+                    <div class="book-info">
+                        <h3>How to Win Friends & Influence People</h3>
+                        <p class="author">Dale Carnegie</p>
+                        <div class="book-footer">
+                            <span class="price">$11.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9781451639612-M.jpg" alt="The 7 Habits">
+                    </div>
+                    <div class="book-info">
+                        <h3>The 7 Habits of Highly Effective People</h3>
+                        <p class="author">Stephen R. Covey</p>
+                        <div class="book-footer">
+                            <span class="price">$15.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-img-wrap">
+                        <img src="https://covers.openlibrary.org/b/isbn/9781592408412-M.jpg" alt="Think and Grow Rich">
+                    </div>
+                    <div class="book-info">
+                        <h3>Think and Grow Rich</h3>
+                        <p class="author">Napoleon Hill</p>
+                        <div class="book-footer">
+                            <span class="price">$10.99</span>
+                            <button class="add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <span class="logo-small">📚 Book Nest</span>
+            <p>© 2024 Book Nest. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

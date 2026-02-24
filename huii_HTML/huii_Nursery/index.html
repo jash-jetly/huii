@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Petal & Root — Botanical Nursery</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="logo-wrap">
+                    <span class="logo-icon">✦</span>
+                    <div class="logo-text">
+                        <h1 class="logo-title">Petal <em>&</em> Root</h1>
+                        <p class="logo-sub">Botanical Nursery</p>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <a href="#">Shop</a>
+                    <a href="#">Garden Guide</a>
+                    <a href="#">Seasonal</a>
+                    <a href="#">About</a>
+                </nav>
+                <button class="cart-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    <span>Cart</span>
+                </button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <p class="hero-eyebrow">Spring Collection 2025</p>
+                <h2 class="hero-headline">Where every<br><em>bloom tells</em><br>a story.</h2>
+                <p class="hero-body">Rare varieties, heirloom seeds & living arrangements — grown with intention, delivered with care.</p>
+                <a href="#gallery" class="hero-cta">Explore the Garden</a>
+            </div>
+            <div class="hero-badge">
+                <span>Est.</span>
+                <span>2009</span>
+            </div>
+        </section>
+
+        <section class="filter-bar">
+            <span class="filter-label">Browse by:</span>
+            <button class="filter-btn active" data-filter="all">All Blooms</button>
+            <button class="filter-btn" data-filter="perennial">Perennials</button>
+            <button class="filter-btn" data-filter="annual">Annuals</button>
+            <button class="filter-btn" data-filter="tropical">Tropical</button>
+            <button class="filter-btn" data-filter="wildflower">Wildflowers</button>
+        </section>
+
+        <main class="gallery-grid" id="gallery">
+
+            <article class="card" data-category="perennial">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1490750967868-88df5691cc22?auto=format&fit=crop&w=600&q=80"
+                        alt="Garden Rose"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Perennial</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Garden Rose</h3>
+                    <p class="card-latin">Rosa × hybrida</p>
+                    <p class="card-desc">The timeless symbol of love, blooming in velvety clusters from early summer through first frost.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $12.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card tall" data-category="annual">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1508610048693-7c4d33969d0f?auto=format&fit=crop&w=600&q=80"
+                        alt="Sunflower"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Annual</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Common Sunflower</h3>
+                    <p class="card-latin">Helianthus annuus</p>
+                    <p class="card-desc">A golden giant that follows the sun across the sky, radiating warmth and summer abundance.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $4.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-category="perennial">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=600&q=80"
+                        alt="Lavender"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Perennial</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">English Lavender</h3>
+                    <p class="card-latin">Lavandula angustifolia</p>
+                    <p class="card-desc">Fragrant violet spires that perfume entire gardens and invite pollinators all season long.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $8.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card wide" data-category="annual">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=800&q=80"
+                        alt="Tulip"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Annual</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Dutch Tulip</h3>
+                    <p class="card-latin">Tulipa gesneriana</p>
+                    <p class="card-desc">Spring's most celebrated herald — bold, elegant cups of pure color rising from winter's soil.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $9.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card tall" data-category="tropical">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1566907164942-9f8b4c958f28?auto=format&fit=crop&w=600&q=80"
+                        alt="Orchid"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Tropical</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Moth Orchid</h3>
+                    <p class="card-latin">Phalaenopsis amabilis</p>
+                    <p class="card-desc">Architectural blooms of otherworldly grace that last for months under gentle indoor care.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $24.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-category="perennial">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1584279580-6c0fe82f069d?auto=format&fit=crop&w=600&q=80"
+                        alt="Hydrangea"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Perennial</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Bigleaf Hydrangea</h3>
+                    <p class="card-latin">Hydrangea macrophylla</p>
+                    <p class="card-desc">Lush snowball clusters that shift hue from blush to cobalt depending on soil acidity.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $14.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-category="wildflower">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1455557412176-4b4e7a45b8e3?auto=format&fit=crop&w=600&q=80"
+                        alt="Chamomile"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Wildflower</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">German Chamomile</h3>
+                    <p class="card-latin">Matricaria chamomilla</p>
+                    <p class="card-desc">Delicate daisy-like blooms with a sweet apple scent, beloved in meadows and teacups alike.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $3.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card tall" data-category="annual">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=600&q=80"
+                        alt="Dahlia"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Annual</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Dinner-Plate Dahlia</h3>
+                    <p class="card-latin">Dahlia pinnata</p>
+                    <p class="card-desc">Spectacular blooms the size of dinner plates with intricately layered petals in fiery autumn hues.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $11.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-category="tropical">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1596438459194-f275f413d6ff?auto=format&fit=crop&w=600&q=80"
+                        alt="Bird of Paradise"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Tropical</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Bird of Paradise</h3>
+                    <p class="card-latin">Strelitzia reginae</p>
+                    <p class="card-desc">Vivid orange and cobalt blooms that mimic a tropical bird in mid-flight, utterly unforgettable.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $29.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card wide" data-category="wildflower">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1474557157379-8aa74a6ef541?auto=format&fit=crop&w=800&q=80"
+                        alt="Poppy Field"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Wildflower</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Oriental Poppy</h3>
+                    <p class="card-latin">Papaver orientale</p>
+                    <p class="card-desc">Silky, tissue-paper petals in blazing scarlet with a dramatic dark centre that commands attention.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $5.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-category="perennial">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1595351475754-8a661f94a7bf?auto=format&fit=crop&w=600&q=80"
+                        alt="Peony"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Perennial</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">Garden Peony</h3>
+                    <p class="card-latin">Paeonia lactiflora</p>
+                    <p class="card-desc">Lushly ruffled blooms with a heady fragrance, long-lived perennials that improve with every passing year.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $18.99</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card" data-category="annual">
+                <div class="card-img-wrap">
+                    <img
+                        src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=600&q=80"
+                        alt="Marigold"
+                        loading="lazy"
+                    >
+                    <span class="card-tag">Annual</span>
+                    <button class="card-save" aria-label="Save">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-name">African Marigold</h3>
+                    <p class="card-latin">Tagetes erecta</p>
+                    <p class="card-desc">Bold pompom blooms in fiery amber and gold that deter pests while celebrating every sunny border.</p>
+                    <div class="card-footer">
+                        <span class="card-price">From $3.49</span>
+                        <button class="card-add">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <section class="cta-banner">
+            <div class="cta-inner">
+                <p class="cta-eyebrow">✦ Newsletter</p>
+                <h2>Seasonal blooms, straight to your inbox.</h2>
+                <p>Get planting guides, early access to rare varieties & exclusive nursery events.</p>
+                <form class="cta-form" onsubmit="return false;">
+                    <input type="email" placeholder="your@email.com" aria-label="Email address">
+                    <button type="submit">Join the Garden</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-icon">✦</span>
+                    <span class="footer-name">Petal & Root</span>
+                </div>
+                <p class="footer-copy">© 2025 Petal & Root Botanical Nursery. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Shipping</a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.dataset.filter;
+                    cards.forEach(card => {
+                        if (filter === 'all' || card.dataset.category === filter) {
+                            card.style.opacity = '0';
+                            card.style.display = 'flex';
+                            requestAnimationFrame(() => {
+                                card.style.transition = 'opacity 0.4s ease';
+                                card.style.opacity = '1';
+                            });
+                        } else {
+                            card.style.opacity = '0';
+                            setTimeout(() => { card.style.display = 'none'; }, 400);
+                        }
+                    });
+                });
+            });
+
+            const savebtns = document.querySelectorAll('.card-save');
+            savebtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.classList.toggle('saved');
+                });
+            });
+        </script>
+
+    </body>
+</html>
