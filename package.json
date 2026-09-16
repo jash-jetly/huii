@@ -1,0 +1,14 @@
+{
+  "name": "assignment10-firestore-users",
+  "version": "1.0.0",
+  "description": "Express API that validates users and stores them in Firebase Firestore",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "firebase-admin": "^14.3.0",
+    "joi": "^18.2.8"
+  }
+}
